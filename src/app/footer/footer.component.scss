@@ -1,0 +1,27 @@
+footer {
+  background-color: #408502;
+  padding-top: 0.25rem;
+  a {
+    color: #ffffff;
+  }
+  h1 {
+    color: #ffffff;
+  }
+  ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 1rem;
+    list-style-type: none;
+    &:first-of-type {
+      li:last-of-type {
+        padding-left: 1.25rem;
+      }
+    }
+    &:last-of-type {
+      text-align: right;
+    }
+    fa-icon {
+      margin-right: 0.5rem;
+    }
+  }
+}

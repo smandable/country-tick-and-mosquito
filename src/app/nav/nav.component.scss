@@ -1,0 +1,23 @@
+.navbar {
+  @media (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav-link {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  li {
+    font-weight: 600;
+    a {
+      color: #1f5732;
+    }
+    &.active {
+      font-weight: 600;
+      background-color: darken($color: #408502, $amount: 10);
+      a {
+        color: white;
+      }
+    }
+  }
+}

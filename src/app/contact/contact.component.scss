@@ -1,0 +1,50 @@
+.row {
+  background-image: url("/assets/img/contact-full.jpg");
+  background-size: cover;
+}
+.main-c {
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  @media (min-width: 992px) {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.description-text-wrapper {
+  @media (min-width: 992px) {
+    min-height: 730px;
+  }
+  overflow-y: auto;
+
+  .hidden {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }
+
+  .description-text {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-image: url("/assets/img/contact-text-bg.png");
+    background-size: cover;
+
+    form {
+      .form-group {
+        &.row {
+          background-image: none;
+        }
+        .btn-primary {
+          background-color: #408502;
+        }
+      }
+    }
+  }
+}

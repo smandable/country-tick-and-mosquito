@@ -1,0 +1,39 @@
+.row {
+  background-image: url("/assets/img/about-full.jpg");
+  background-size: cover;
+}
+.main-c {
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  @media (min-width: 992px) {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.callout {
+  width: 100%;
+}
+.description-text-wrapper {
+  @media (min-width: 992px) {
+    min-height: 730px;
+  }
+  overflow-y: auto;
+}
+.description-text {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  background-image: url("/assets/img/abt-text-bg.png");
+  background-size: cover;
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 125%;
+  }
+}

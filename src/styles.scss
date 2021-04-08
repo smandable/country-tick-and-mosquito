@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(75, 71, 71) !important;
+  font-family: "Century Gothic", CenturyGothic, Arial, sans-serif !important;
+}
+body,
+#wrapper {
+  min-height: 100vh;
+}
+#wrapper {
+  background-color: darken($color: #408502, $amount: 10);
+}

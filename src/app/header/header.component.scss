@@ -1,0 +1,40 @@
+#header {
+  background-image: url("../../assets/img/hdr-bg.jpg");
+  background-repeat: no-repeat;
+  background-color: #408502;
+  border: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: table;
+  width: 100%;
+}
+#logo {
+  display: table-cell;
+  width: 185px;
+  height: 135px;
+  img {
+    margin-top: 0.5rem;
+  }
+}
+
+#callout {
+  display: table-cell;
+  vertical-align: bottom;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  //   margin-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media (min-width: 768px) {
+    font-size: 1.75rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 1.75rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 2.25rem;
+  }
+}

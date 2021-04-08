@@ -1,0 +1,146 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="callout col-md-7 d-none d-md-block"></div>
+    <div class="main-c col-sm-12 col-md-5">
+      <div class="description-text-wrapper">
+        <div class="description-text contact">
+          <form
+            class="contact"
+            [formGroup]="form"
+            method="post"
+            (ngSubmit)="onSubmit()"
+          >
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="Name"
+                  [formControl]="name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="Email"
+                  [formControl]="email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="Street"
+                  [formControl]="street"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputTown"
+                  placeholder="Town"
+                  [formControl]="city"
+                  required
+                />
+              </div>
+              <div class="col-3">
+                <select
+                  formControlName="state"
+                  class="form-control"
+                  id="inputState"
+                  value="CT"
+                >
+                  <option selected="selected" value="CT">CT</option>
+                  <option>NY</option>
+                  [formControl]="state"
+                </select>
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputZip"
+                  placeholder="Zip"
+                  [formControl]="zip"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  placeholder="Message"
+                  rows="7"
+                  [formControl]="message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <button
+                  [disabled]="isLoading"
+                  type="submit"
+                  class="btn btn-primary"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+            <input [formControl]="honeypot" class="hidden" type="text" />
+            <div
+              [ngClass]="!submitted ? 'hidden' : 'visible'"
+              class="center-text"
+            >
+              <span>{{ responseMessage }}</span>
+            </div>
+          </form>
+
+          <!-- <div class="col-md-5">
+            <div class="contact-alt">
+              <ul>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <span>203.880.5888</span>
+                </li>
+                <li>
+                  <i class="fa fa-envelope-o"></i>
+                  <span>
+                    <a href="mailto:info@countrytickandmosquito.com"
+                      >Email us</a
+                    ></span
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <span>
+                    <ul>
+                      <li>431 Pepper St.</li>
+                      <li>Monroe, CT 06468</li>
+                    </ul>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
